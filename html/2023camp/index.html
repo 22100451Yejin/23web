@@ -1,0 +1,277 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<title>클론 코딩 홈페이지</title>
+<style>
+
+    .header_logo{
+        float:center;
+        width: 40%;
+        height: 80px;
+    }
+    .header_title{
+        width: 50%;
+
+    }
+    .header_contents{
+        display: flex;
+        justify-content: space-around;
+    }
+    .header_menu{
+        display: flex;
+    }
+
+    #search{
+        padding: 3%;
+        width:50px;
+        height: 50px;
+    }
+
+    #login{
+        padding: 3%;
+        width:50px;
+        height: 50px;
+    }
+
+    ul{
+        list-style: none;
+        text-align: center;
+    }
+
+    li{
+        
+        margin-right: 20px;
+        display: inline-block;
+    }
+    #channellist{
+        text-align: center;
+    }
+
+    #channelbar{
+        padding: 15px;
+    }
+
+    #content_box_Card{
+        background-color: blue;
+    }
+
+    .channel_content_link {
+    position: relative;
+    display: block;
+    padding: 20px 20px 5px 20px;
+    color: black;
+    text-decoration-line: none;
+    }
+
+    body:not(.as_feed_type) .channel_content_thumb {
+        position: relative;
+        float: right;
+        width: 96px;
+        height: 96px;
+        margin: 0 0 0 20px;
+    }
+
+    .channel_content_card_wrap {
+        width: 100%;
+        max-width: 680px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 0;
+        padding-right: 0;
+}
+
+    .channel_content_card {
+        border-radius: 10px;
+        -webkit-box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.05), 0 0 1px 0 rgba(0, 0, 0, 0.07);
+        box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.05), 0 0 1px 0 rgba(0, 0, 0, 0.07);
+        background-color: #fff;
+    }
+
+
+    .content_list{
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    .channel_content_item{
+        max-width: 50%;
+    }
+
+
+
+
+
+</style>
+</head>
+<body style="background-color:ivory">
+    <header class="header_top">
+        <div class="header">
+            <div class="header_innner">
+                <div class="header_contents">
+                    <div class="header_logo">
+                        <img src="/Users/ohyejin/Desktop/웹서캠/logo.png">
+                    </div>
+                    <div class="header_title">
+                        <h1>긴가쟌의 콘텐츠 연구소</h1>
+                    </div>
+                    <div class="header_menu">
+                        <p id="search"> 검색</p>
+                        <p id="login"> 로그인</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <hr>
+
+    <div class="channel_bar">
+        <div class="channel_bar_inner">
+            <div class="channel">
+                <ul class="channellist">
+                    <li class="channelitem" >홈</li>
+                    <li class="channelitem">카테고리</li>
+                    <li class="channelitem">커뮤니티</li>
+                    <li class="channelitem">정보</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="main_content">
+        <ul class="content_list">
+            <li class="channel_content_item">
+                <div class="channel_content_card_wrap">
+                    <div class="channel_content_card">
+                        <a href="/imgoodmanok/kcontentslab/contents/230713232527349uk" class="channel_content_link _LAZY_LOADING_WRAP" data-clk="chlh.cont">
+							<div class="channel_content_thumb _LAZY_LOADING_ERROR_HIDE">
+								<img class="_LAZY_LOADING" alt="" width="86" height="86" src="https://scs-phinf.pstatic.net/MjAyMzA3MTNfNjkg/MDAxNjg5MjU3OTk5NjM3.nWN-hvrisVG5FdYH05nF2AUbWVg3fxA4qFjsNpcrlAgg.V9wfYJ05gwS2NOY5Kbv1YdvzBAEBSXToEXVlQTDPbdMg.PNG/%EC%A0%9C%EB%AA%A9%EC%9D%84-%EC%9E%85%EB%A0%A5%ED%95%B4%EC%A3%BC%EC%84%B8%EC%9A%94_-015_(5).png?type=nfs260_260">
+							</div>
+							<div class="channel_content_text">
+								<strong class="channel_content_title">
+									사칭 피싱 메일 '해커'의 멍청한 실수! 해킹 피하는 방법에 대해 알아보자.
+								</strong>
+								<div class="channel_content_desc_wrap">
+									<p class="channel_content_desc">그동안 오랜 시간 동안에도 잘 오지 않던 특정 사이트 사칭 피싱 메일이 요즘 들어, 오는 횟수가 늘어나고 있다. 인터넷의 발달로 인해 이러한 사이버 범죄 및 행위가 늘어나는 것은 당연하겠지만, 이미 대다수의 많은 사람들은 위험성을 알면서도 사소한 실수로 인해 또는 습관적으로 무심코 당하는 경우가 더러 있을 거란 생각이 들었다. 왜냐하면, 최근에 내 스스로가 경험한 어이없는 경험 때문이다. 지금부터 실제 해킹 피싱 사례를 확인하고 해당 상황을 겪게 된다면 어떻게 확인을 하고 대처해야 할지 잔기술에 대해 알아보자. 필자의 경우, 상당히 다양한 방법의 피싱 메일이 왔는데, 구글과 네이버를 중심으로 이야기하겠다. 처음에 메일이 왔을 때, 스마트폰에 메일 알람이 울리기 때문에 바로 확인을 할 수 있다. 그리고 보통 스팸메일이거나 피싱</p>
+								</div>
+							</div>
+						</a>
+                    </div>
+                </div>
+            </li>
+            <li class="channel_content_item">
+				<div class="channel_content_card_wrap">
+					<div class="channel_content_card">
+						<a href="/imgoodmanok/kcontentslab/contents/230704020455022af" class="channel_content_link _LAZY_LOADING_WRAP" data-clk="chlh.cont">
+							<div class="channel_content_thumb _LAZY_LOADING_ERROR_HIDE">
+								<img class="_LAZY_LOADING" alt="" width="86" height="86" src="https://scs-phinf.pstatic.net/MjAyMzA3MDRfNzEg/MDAxNjg4NDAzODEwMzMz.xcEmJp0LMzguUZ2Qx4DpEZjyvhD96wNGLrMVSwR1eK4g.2afpS_9ZzLC7-cDXKV8QkY86BlMqtW1tGc_5ShSY21cg.PNG/%EC%A0%9C%EB%AA%A9%EC%9D%84-%EC%9E%85%EB%A0%A5%ED%95%B4%EC%A3%BC%EC%84%B8%EC%9A%94_-005_(12).png?type=nfs260_260">
+							</div>
+							<div class="channel_content_text">
+								<strong class="channel_content_title">
+									배우자의 불륜현장을 직접 보았다면, 영화 '드라이브 마이 카'를 통해 알아보는 '무라카미 하루키' 원작소설
+								</strong>
+								<div class="channel_content_desc_wrap">
+									<p class="channel_content_desc">2021년 기준 「인구 통계청」의 기준에 따르면, 우리나라 결혼 평균 나이가 남자는 33세 여자는 31세라고 한다. 이는 오늘날 여러 가지 사회적 조건과 결혼을 하기 위한 다양한 환경적인 이유로 인해 과거에 비해 결혼 적령기는 상당히 많이 늦어진 셈이다.  그럼에도 불구하고 결혼은 인간이라면 누구나 꼭 해야만 하는 사회적 당위성의 굴레에서 벗어날 수 없다.  어쨌든, 이유를 막론하고 결혼은 많은 사람들이 하는 것으로 어느덧 인간의 수명이 100세에 도달하기에 선택을 하는 데 있어 당연히 신중할 수밖에 없다.  그래서 어쩌면 현대 사회에서 오랜 시간 동안 하나의 이성을 사랑하는 것은 매우 어려울 것이다. 불륜은 우리 사회에서 금지한 하나의 '터부1)'라 할 수 있다.  1)미개한 사회에서 신성하거나 속된 것, 또는 깨끗하거나 부정하다고 인정된 사물</p>
+								</div>
+							</div>
+						</a>
+						<div class="channel_content_info">
+							<div class="channel_content_info_text">
+								<em class="channel_content_lock _CONTENT_AUTHORITY_LIST" data-cp-name="imgoodmanok" data-sub-id="kcontentslab" data-content-id="230704020455022af">
+								</em>
+							</div>
+							<div class="channel_content_count">
+								<div class="u_likeit_list_module _reactionModule" data-sid="SCS" data-cid="p_imgoodmanok_kcontentslab_230704020455022af" data-loaded="1" data-facetype="0" style="visibility: visible;">
+									<a href="#" class="u_likeit_list_btn _button off" data-type="like" aria-pressed="false" data-ishiddenlabel="false">
+										<span class="u_ico _icon"></span>
+									</a>
+								</div>
+								<span class="channel_content_comment">
+									<a href="/imgoodmanok/kcontentslab/comment/230704020455022af" class="channel_content_comment_count _COMMENT_COUNT_LIST" data-ticket="scs" data-object-id="p_imgoodmanok_kcontentslab_230704020455022af" data-zero-allow="false" data-processed="true"></a>
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</li>
+            <li class="channel_content_item">
+				<div class="channel_content_card_wrap">
+					<div class="channel_content_card">
+						<a href="/imgoodmanok/kcontentslab/contents/230626212444736li" class="channel_content_link _LAZY_LOADING_WRAP" data-clk="chlh.cont">
+							<div class="channel_content_thumb _LAZY_LOADING_ERROR_HIDE">
+								<img class="_LAZY_LOADING" alt="" width="86" height="86" src="https://scs-phinf.pstatic.net/MjAyMzA2MjZfMjUz/MDAxNjg3NzgxNjc4NTUy.7Dn6Dcbj5P6vunsDlMOFzScbkzD5tY_NSIbb5wJ4nJkg.QCyO3MfXCt6JemHLLmfgdbihDxZFQYYycyYQgJd_nVkg.PNG/%EC%A0%9C%EB%AA%A9%EC%9D%84-%EC%9E%85%EB%A0%A5%ED%95%B4%EC%A3%BC%EC%84%B8%EC%9A%94_-022_(3).png?type=nfs260_260">
+							</div>
+							<div class="channel_content_text">
+								<strong class="channel_content_title">
+									우리가 사는 현재, 모두가 '편의점 인간'
+								</strong>
+								<div class="channel_content_desc_wrap">
+									<p class="channel_content_desc">「편의점 인간」 책을 펼치면 처음으로 등장하는 작가의 소개란에 이런 글이 적혀 있다.  “초등학생 시절, 나는 신들린 듯이 소설을 쓰고 있었다. 언제나, 좀 더 가고 싶다는 생각하고 있었다. 어디에 가고 싶은지는 나 자신도 모르지만, 어쨌든 ‘말’이나 ‘이야기’의 힘을 빌리지 않고는 도달할 수 없는 곳에 가보고 싶어 견딜 수가 없었다” 누구나 인생을 살아가는 데 있어 꿈을 가지고 있다. 다시 말해 무엇이든 인생의 목표를 하나쯤 정하기 마련이다. 그러나 우리가 살고 있는 현실은 그리 녹록지 않다는 걸 동시에 깨닫게 되는 순간, 이내 사라진 수증기처럼 어디로 가야 할지 모르는 '길 잃은 한 마리 소외된 양'이 돼버린다.  청년이라 불리는 우리 젊은 MZ 세대의 현실은 소설 속 주인공 ‘게이코’와 다를 게 없었다. 어려서부터 입시와의 무한</p>
+								</div>
+							</div>
+						</a>
+						<div class="channel_content_info">
+							<div class="channel_content_info_text">
+								<em class="channel_content_lock _CONTENT_AUTHORITY_LIST" data-cp-name="imgoodmanok" data-sub-id="kcontentslab" data-content-id="230626212444736li">
+								</em>
+
+							</div>
+							<div class="channel_content_count">
+								<div class="u_likeit_list_module _reactionModule" data-sid="SCS" data-cid="p_imgoodmanok_kcontentslab_230626212444736li" data-loaded="1" data-facetype="0" style="visibility: visible;">
+									<a href="#" class="u_likeit_list_btn _button off" data-type="like" aria-pressed="false" data-ishiddenlabel="false">
+										<span class="u_ico _icon"></span>
+									</a>
+								</div>
+								<span class="channel_content_comment">
+									<a href="/imgoodmanok/kcontentslab/comment/230626212444736li" class="channel_content_comment_count _COMMENT_COUNT_LIST" data-ticket="scs" data-object-id="p_imgoodmanok_kcontentslab_230626212444736li" data-zero-allow="false" data-processed="true"></a>
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</li>
+
+
+            <li class="channel_content_item">
+				<div class="channel_content_card_wrap">
+					<div class="channel_content_card">
+						<a href="/imgoodmanok/kcontentslab/contents/230617233904934sr" class="channel_content_link _LAZY_LOADING_WRAP" data-clk="chlh.cont">
+							<div class="channel_content_thumb _LAZY_LOADING_ERROR_HIDE">
+								<img class="_LAZY_LOADING" alt="" width="86" height="86" src="https://scs-phinf.pstatic.net/MjAyMzA2MTdfMTk0/MDAxNjg3MDEyMDc1NjI1.dzQiF7YLxHWpegxeK5D61GdsC58k9vs8mamRlUL4O1Mg.F2iJSEV6O4GyZn5bdiJvAQm_73vGBEdntJx2Jra1YDsg.PNG/%EC%A0%9C%EB%AA%A9%EC%9D%84-%EC%9E%85%EB%A0%A5%ED%95%B4%EC%A3%BC%EC%84%B8%EC%9A%94_-012_(4).png?type=nfs260_260">
+							</div>
+							<div class="channel_content_text">
+								<strong class="channel_content_title">
+									직장인에게 글쓰기가 꼭 필요한 순간과 이유. 실제 사건 반전
+								</strong>
+								<div class="channel_content_desc_wrap">
+									<p class="channel_content_desc">요즘같이 눈부신 기술의 발달로 인한 디지털이 만연한 세상에서 '글쓰기'에 대한 관심을 가진 사람은 극히 드물 것이다. 흔히 학창 시절에 배움이란 테두리 안에서 과제나 숙제 등을 위한 용도로만 사용되는 것이 아마 글쓰기가 아닐까란 생각이 든다. 대부분 성인이 되고 사회에 나오면 창작과 생각에 기반으로 하는 글을 통해 무언가를 적극적으로 하기보다는 오히려 이미 정의되거나 주어진 이론 또는 신체적으로 직접 행동하거나 전문적으로 글쓰기와 관련된 분야에서만 한정 지어 글을 쓰는 경우가 많을 것이다. 그런데 사실상 글쓰기는 우리의 삶 속에 언제 어디서든 최소 한 번 이상은 불현듯 꼭 필요할 때가 찾아올 것이다. 특히나 직장인이라면 말이다. 지금부터 실제 사례를 통해 직장인에게 왜 글쓰기가 필요한지에 대해 이야기하고자 한다. 직</p>
+								</div>
+							</div>
+						</a>
+						<div class="channel_content_info">
+							<div class="channel_content_info_text">
+								<em class="channel_content_lock _CONTENT_AUTHORITY_LIST" data-cp-name="imgoodmanok" data-sub-id="kcontentslab" data-content-id="230617233904934sr">
+								</em>
+							</div>
+							<div class="channel_content_count">
+								<div class="u_likeit_list_module _reactionModule" data-sid="SCS" data-cid="p_imgoodmanok_kcontentslab_230617233904934sr" data-loaded="1" data-facetype="0" style="visibility: visible;">
+									<a href="#" class="u_likeit_list_btn _button off" data-type="like" aria-pressed="false" data-ishiddenlabel="false">
+										<span class="u_ico _icon"></span>
+									</a>
+								</div>
+								<span class="channel_content_comment">
+									<a href="/imgoodmanok/kcontentslab/comment/230617233904934sr" class="channel_content_comment_count _COMMENT_COUNT_LIST" data-ticket="scs" data-object-id="p_imgoodmanok_kcontentslab_230617233904934sr" data-zero-allow="false" data-processed="true"></a>
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</li>
+
+
+        </ul>
+    </div>
+</body>
+</html>
+
